@@ -42,7 +42,7 @@ class Logined extends Controller{
             $a=$this->LoginModel->Login($username,$password);
             $kq=json_decode($a);
             $mang=array();
-            for($i=0;$i<count($kq);$i++){
+            for($i=1;$i<count($kq);$i++){
                 if($username==$kq[$i]->username && $password==password_verify($password,$kq[$i]->password)){
                     $mang[]=$kq[$i];
                     $_SESSION["id"]=$kq[$i]->idnguoidung;
