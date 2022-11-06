@@ -13,5 +13,5 @@ Nếu không chạy được do lỗi địa chỉ localhost:
 
 
 Updated:
-    ./mvc/controllers/Logined.php: Line 45 changed: 'if($kq = 0' as origin (because signup role had problem with admins/customers)
+    ./mvc/controllers/Logined.php: Line 45 changed: 'if($kq = 1' as origin (because signup role had problem with admins/customers) nếu not work thì đổi lại
       + For some cases
